@@ -16,7 +16,7 @@ php artisan migrate
 
 Add cron job
 ```bash
-* * * * * cd /[path to project] && php artisan CronDaily:run >> /dev/null 2>&1
+0 0 * * * cd /var/www/html/currency_app && php artisan CronDaily:run >> /dev/null 2>&1
 ```
 
 Run server 
