@@ -43,10 +43,6 @@ class CurrencyCommand extends Command
      */
     public function handle()
     {
-        //logger(__CLASS__);
-        //$response = Http::get('http://data.fixer.io/api/2021-03-20?access_key=7576c611991e535b2530c3f840dae564&base=EUR&symbols=USD,GBP,RSD&format=1');
-        //logger($response->json());
-
         /**
          * Get and store the currency daily values
          */

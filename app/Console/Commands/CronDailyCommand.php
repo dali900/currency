@@ -37,6 +37,6 @@ class CronDailyCommand extends Command
      */
     public function handle()
     {
-        //$this->call('Currency:getdata');
+        $this->call('Currency:getdata');
     }
 }

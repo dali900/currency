@@ -2,9 +2,7 @@
 
 
 ## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+Copy '.env.example' to '.env'
 
 ```bash
 composer install
@@ -14,4 +12,14 @@ Run migration
 
 ```bash
 php artisan migrate
+```
+
+Add cron job
+```bash
+* * * * * cd /[path to project] && php artisan CronDaily:run >> /dev/null 2>&1
+```
+
+Run server 
+```bash
+php artisan serve
 ```
